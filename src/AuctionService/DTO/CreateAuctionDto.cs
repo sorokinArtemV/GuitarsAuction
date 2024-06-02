@@ -12,4 +12,7 @@ public class CreateAuctionDto
     public string? SignatureDetails { get; set; }
     public string? Condition { get; set; }
     public string? Description { get; set; }
+    public string? ImageUrl { get; set; }
+    public int ReservePrice { get; set; }
+    public DateTime AuctionEnd { get; set; }
 }

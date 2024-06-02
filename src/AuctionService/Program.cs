@@ -1,4 +1,7 @@
+using System.Reflection;
 using AuctionService.Data;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +13,9 @@ builder.Services.AddDbContext<AuctionDbContext>(opt =>
     opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+builder.Services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly())
+    .AddFluentValidationAutoValidation();
 
 var app = builder.Build();
 

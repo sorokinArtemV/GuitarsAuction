@@ -65,8 +65,8 @@ public class AuctionsController(AuctionDbContext context, IMapper mapper) : Cont
         if (auction == null) return NotFound();
 
         // TODO: check seller == username
-
-        var updatedAuction = mapper.Map<UpdateAuctionDto>(auction);
+        
+        mapper.Map(updateAuctionDto, auction.Item);
         
         var result = await context.SaveChangesAsync() > 0;
 
