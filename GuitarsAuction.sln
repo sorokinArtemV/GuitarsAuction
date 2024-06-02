@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionService", "AuctionService\AuctionService.csproj", "{044201A4-27BF-4992-9CB1-3569374AEAB4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DE9C3219-DEA1-4CBA-AFFF-04EFA494BFD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionService", "src\AuctionService\AuctionService.csproj", "{12DEB746-503D-48B2-A608-365BD505E868}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +10,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{044201A4-27BF-4992-9CB1-3569374AEAB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{044201A4-27BF-4992-9CB1-3569374AEAB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{044201A4-27BF-4992-9CB1-3569374AEAB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{044201A4-27BF-4992-9CB1-3569374AEAB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12DEB746-503D-48B2-A608-365BD505E868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12DEB746-503D-48B2-A608-365BD505E868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12DEB746-503D-48B2-A608-365BD505E868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12DEB746-503D-48B2-A608-365BD505E868}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{12DEB746-503D-48B2-A608-365BD505E868} = {DE9C3219-DEA1-4CBA-AFFF-04EFA494BFD3}
 	EndGlobalSection
 EndGlobal
