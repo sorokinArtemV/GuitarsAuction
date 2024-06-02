@@ -160,16 +160,16 @@ public class DbInitializer
                 AuctionEnd = DateTime.UtcNow.AddDays(13),
                 Item = new Item
                 {
-                    Make = "Fender",
-                    Model = "Stratocaster",
-                    Year = 1965,
+                    Make = "ESP",
+                    Model = "Explorer",
+                    Year = 1984,
                     Type = "Electric",
-                    Color = "Olympic White",
-                    CelebrityOwned = "Jimi Hendrix",
-                    HasCelebritySignature = false,
-                    SignatureDetails = null,
-                    Condition = "Fair",
-                    Description = "An Olympic White Fender Stratocaster reminiscent of the one played by Jimi Hendrix. This guitar embodies the spirit of the '60s rock revolution."
+                    Color = "Black",
+                    CelebrityOwned = "James Hetfield",
+                    HasCelebritySignature = true,
+                    SignatureDetails = "Signed on the body with a silver marker",
+                    Condition = "Good",
+                    Description = "A menacing Black ESP Explorer, echoing the aggressive style of James Hetfield. This guitar has been a staple in Metallica's heavy metal sound."
                 }
             },
             // 8 Audi R8
@@ -181,17 +181,18 @@ public class DbInitializer
                 AuctionEnd = DateTime.UtcNow.AddDays(19),
                 Item = new Item
                 {
-                    Make = "Ibanez",
-                    Model = "JEM",
-                    Year = 1987,
-                    Type = "Electric",
-                    Color = "White",
-                    CelebrityOwned = "Steve Vai",
+                    Make = "Traditional Mongolian",
+                    Model = "Morin Khuur",
+                    Year = 2016, // Assuming the year the band gained international recognition
+                    Type = "String",
+                    Color = "Natural Wood",
+                    CelebrityOwned = "Gala of The Hu Band",
                     HasCelebritySignature = true,
-                    SignatureDetails = "Signed on the tremolo cover",
-                    Condition = "Mint",
-                    Description = "Steve Vai's Ibanez JEM, with its distinctive 'monkey grip' and floating tremolo, is a shredder's dream. This pristine guitar comes with Vai's autograph."
+                    SignatureDetails = "Gala's signature, authenticating its use in performances",
+                    Condition = "Excellent",
+                    Description = "A distinguished Morin Khuur, crafted with traditional Mongolian techniques, known for its deep resonance and captivating sound. Played by Gala of The Hu band, this instrument has a storied history, having been a central feature in the band's 'Hunnu Rock' performances. Its value is enhanced by its cultural significance, making it a coveted piece for collectors."
                 }
+
             },
             new Auction
             {
